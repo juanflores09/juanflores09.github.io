@@ -6,17 +6,25 @@
 body{
     font-family: 'Bai Jamjuree', sans-serif;
 }
+:root{
+    --color-title-primary: rgb(175, 50, 5);
+    --color-desc-pimary-black:rgb(20, 19, 19);
+    --color-desc-secondary-white:#fff;
+    --bg-project:#fff;
+}
 header{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-color: rgb(20, 20, 20);
+    background: url('../imagenes/tim-goedhart-jhd_t44LUeg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     .nav{
         position: absolute;
         width: 100%;
         height: 55px;
-        background-color: rgba(22, 21, 21, 0.521);
+        background-color: rgb(22, 21, 21);
         position: fixed;
         z-index: 550;
     }
@@ -63,7 +71,7 @@ header{
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.692);
     }
 
     .title{
@@ -203,7 +211,7 @@ header{
     video{
         width: 100%;
         height: 100%;
-        margin-top: 27px;
+        /*margin-top: 27px;*/
     }
 /*About me*/
 .aboutMe{
@@ -235,7 +243,7 @@ header{
             text-align: center;
             padding: 10px;
             font-size: 40px;
-            color: rgb(175, 50, 5);
+            color: var(--color-title-primary);
             font-family: 'Nanum Gothic', sans-serif;
         }
         .description{
@@ -349,14 +357,14 @@ header{
     width: 100%;
     z-index: 100;
     padding: 50px;
-    background-color: rgb(26, 21, 21);
-    color: #fff;
+    background-color: var(--bg-project);
+    color: var(--color-desc-pimary)
 }
     .sec-title{
         text-align: center;
         padding: 15px;
         font-size: 30px;
-        color: rgb(231, 142, 109);
+        color:var(--color-title-primary);
         font-family: 'Nanum Gothic', sans-serif;
     }
     .projects__desc{
@@ -364,7 +372,7 @@ header{
     }
         .projects__desc h3{
             padding: 20px 50px;
-            color: rgb(241, 236, 228);
+            color: var(--color-desc-pimary);
         }
     .cont-projects{
         width: 100%;
@@ -382,9 +390,9 @@ header{
             margin: 20px;
             border-radius: 10px;
             z-index: 999;
-            box-shadow: -1px 0px 22px 0px rgba(0, 0, 0, 0.86);
+            box-shadow: -1px 0px 18px 0px rgba(130,130,130,0.86);
             cursor: pointer;
-            background-color: rgb(45, 34, 27);
+            background-color:var(--bg-project);
             
         }
             .project .img{
@@ -402,14 +410,14 @@ header{
                 height: 37%;
             }
                 .project-descr h1{
-                    color: rgb(247, 199, 187);
+                    color: var(--color-desc-pimary);
                     text-align: center;
                     padding: 5px 0;
                     font-size: 25px;
                     font-weight: 100;
                 }
                 .project-descr h3{
-                    color: rgb(231, 245, 231);
+                    color: var(--color-desc-pimary);
                     font-size: 15px;
                     padding: 10px 15px;
                     font-weight: 80;
@@ -569,7 +577,8 @@ header{
     display: flex;
     padding: 0 5%;
     flex-wrap: wrap;
-    color: rgb(128, 49, 4);
+    color: var(--color-desc-secondary-white);
+    background-color: var(--color-title-primary);
 }
     .parrafo{
         width:50% ;
@@ -581,7 +590,7 @@ header{
         .parrafo h1{
             width: 100%;
             padding: 10px 0;
-            color: rgb(177, 62, 17);
+            color: var(--color-desc-secondary-white);
         }
         .parrafo p{
             height: 100%;
@@ -613,7 +622,7 @@ header{
                 }
                 
 footer{
-    background-color: rgb(70, 20, 4);
+    background-color: rgb(27, 7, 1);
     width: 100%;
     height: 70px;
     display: flex;
