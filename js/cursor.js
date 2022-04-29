@@ -1,5 +1,5 @@
 const type = new Typed('.typed',{
-    strings:['Ingeniero de Sistemas','Desarrollador FullStack','Diseñador web',
+    strings:['Desarrollador FullStack','Ingeniero de Sistemas','Diseñador web',
     'Desarrollador desktop'],
 
     stringsElement:'#cadenas-texto',

@@ -5,14 +5,15 @@
 }
 body{
     font-family: 'Bai Jamjuree', sans-serif;
-    background-color: rgba(228, 218, 218, 0.884);
+    background-color: rgb(218, 213, 212);
+    /*background-color: rgba(228, 218, 218, 0.884);*/
 }
 :root{
     /*--color-text-primary: rgb(255, 233, 233);*/
     --color-text-secondary-orange: rgb(219, 78, 27);
     /*--bg-formAcad-Curso: rgba(59, 56, 56, 0.548);*/
     /*--bgAboutMe: rgb(39, 38, 38);*/
-    --bgAboutMe: rgb(247, 240, 240);
+    --bgAboutMe: rgb(238, 232, 232);
     --color-text-primary: rgb(15, 15, 15);
     --color-text-secondary-white: #fff;
     --bg-formAcad-Curso: rgba(228, 220, 220, 0.726);
@@ -61,6 +62,7 @@ nav{
         font-size: 25px;
         padding-left: 30px;
     }
+    
     nav ul{
         height: 100%;
         list-style: none;
@@ -89,12 +91,14 @@ nav{
     display: flex;
     flex-direction: column;
     background-color: var(--bgAboutMe);
+    /*background-color: rgb(201, 178, 171);*/
     display: flex;
     align-items: center;
     height: 600px;
     z-index: 200;
-    background-color: var(--bgAboutMe);
     padding-bottom: 1%;
+    margin-bottom: 20px;
+    transition: all 0.4s;
 }
     .about_descr{
         color: var(--color-text-primary);
@@ -105,6 +109,7 @@ nav{
         justify-content: center;
         align-items: center;
         text-align: center;
+        transition: all 0.4s;
     }
     .about_img{
         height: 60%;
@@ -116,6 +121,7 @@ nav{
         background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
         url(../imagenes/jelle-van-leest-OLTJsGcuqXk-unsplash.jpg);
         background-size: cover;
+        transition: all 0.4s;
     } 
         .about_img img{
             height: 280px;
@@ -125,23 +131,25 @@ nav{
         }
     .about-hobbies{
         width: 100%;
-        height: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-color: var(--bg-formAcad-Curso);
+        transition: all 0.4s;
+        padding: 7px;
     }
         .hobbie{
             display: flex;
-            width: 150px;
-            height: 50%;
+            width: 235px;
+            height: 37px;
             margin: 1%;
-            background-color: var(--bgAboutMe);
-            color: var(--color-text-secondary-orange);
-            border-radius: 2%;
+            background-color: rgb(230, 96, 55);
+            color: var(--color-text-secondary-white);
+            border-radius: 16px;
             justify-content: center;
             align-items: center;
+            transition: all 0.4s;
         }
             .hobbie img{
                 height: 80%;
@@ -164,9 +172,19 @@ h2{
     display: flex;
     flex-direction: column;
     background-color: var(--bgAboutMe);
+    /*background-color: rgb(201, 178, 171);*/
     margin-bottom: 50px;
-    padding: 5%;
+    padding: 3.5% 5%;
     z-index: 200;
+    transition: all 0.4s;
+}
+.desc{
+    display: flex;
+    width: 99%;
+    padding: 2%;
+    margin: 0.5%;
+    background-color: var(--bg-formAcad-Curso);
+    color: var(--color-text-primary);
 }
 .formacionAcad{
     display: flex;
@@ -183,15 +201,17 @@ h2{
     }
     .formacionAcad img{
         height: 100%;
-        padding: .8%;
+        padding: .8%;        
+    }
+    .cont-unprg-name{
+        display: flex;
+        width: 100%;
     }
     .unprg-name{
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 3%;
-        
+        margin-left: 50px;
     }
 
 .cursos{
@@ -214,4 +234,66 @@ h2{
         flex-direction: column;        
         justify-content: center;
         padding-left:5% ;
+    }
+    
+    @media screen and (max-width: 700px){
+    
+        .container{
+            padding: 12% 0;
+        }
+        .nav{
+            height: 40px;
+        }
+        .aboutMe1{
+            height: 470px;
+        }
+        .about_descr{
+            justify-content: end;
+            padding-bottom: 18px;
+        }
+        .about_img img{
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            transform: translateY(32%);
+        }
+        .about_img{
+            height: 35%;
+        }
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 15px;
+        }
+        h3{
+            font-size: 12px;
+        }
+        h4{
+            font-size: 12px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .curso{
+            width: 100%;
+            height: 60px;
+        }
+        .curso img{
+            transform: scale(0.6);
+        }
+        .namePage{
+            width: 100%;
+            font-size: 20px;
+        }
+        nav ul{
+            display: none;
+        }
+        .cont-unprg-name{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .unprg-name{
+            margin-left: 0;
+        }
     }
